@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mockup de Cordões</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mockup de Cordões</h1>
+  </header>
+
+  <main>
+    <!-- Área para upload de arte -->
+    <section id="upload-section">
+      <h2>Faça o upload da sua arte</h2>
+      <input type="file" id="upload" accept="image/*">
+    </section>
+
+    <!-- Área de personalização -->
+    <section id="customize-section">
+      <h2>Personalize o cordão</h2>
+      <label for="color">Cor do fundo:</label>
+      <input type="color" id="color" value="#ffffff">
+      
+      <label for="material">Material:</label>
+      <select id="material">
+        <option value="tecido">Tecido</option>
+        <option value="poliester">Poliéster</option>
+      </select>
+    </section>
+
+    <!-- Área de preview -->
+    <section id="preview-section">
+      <h2>Pré-visualização</h2>
+      <canvas id="preview-canvas"></canvas>
+    </section>
+
+    <!-- Botão para download -->
+    <button id="download-btn">Baixar Mockup</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
